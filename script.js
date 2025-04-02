@@ -14,8 +14,8 @@ function getMethod() {
             $.each(response, function(index, item) {
                 $('.api-data').append(`
                     <div class="box" data-id="${item.id}">
-                        <h4>${item.task_name}</h4>
-                        <p>${item.description}</p>
+                        <h4>Task Name: ${item.task_name}</h4>
+                        <p>description: ${item.description}</p>
                         <div class='flex-div'>
                             <p>${new Date().toLocaleDateString()}</p>
                             <i class="fa-solid fa-circle-exclamation exclamation"></i>
